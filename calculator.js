@@ -4,7 +4,7 @@ var box = document.getElementById('display');
 
 function toScreen (x){
     box.value+= x;
-    if(x === 'C'){
+    if(x === 'CE'){
       box.value='';
     }
 }
