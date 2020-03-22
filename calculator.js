@@ -30,13 +30,7 @@ function equal(){
   pointed.disabled = false;
 }
 
-function power(){
-  x = box.value;
-  x = eval(x*x);
-  box.value = x;
-  equal();
-  pointed.disabled = false;
-}
+
 
 function backspace(){
   let num = box.value;
@@ -44,7 +38,8 @@ function backspace(){
   let newNum = num.substring(0,len);
   box.value = newNum;
 }
-
+//Modual Opperatoros 
+// ----------------------------------------
 function negation(){
   let num = box.value;
   let x = eval(num);
@@ -63,4 +58,20 @@ function squareRoot(){
   let x = Math.sqrt(eval(num));
   box.value = x; 
   equal();
+}
+
+function power(){
+  x = box.value;
+  x = eval(x*x);
+  box.value = x;
+  equal();
+  pointed.disabled = false;
+}
+
+function percent(){
+  x = box.value;
+  x = eval(x/100);
+  box.value = x;
+  equal();
+  pointed.disabled = false;
 }
