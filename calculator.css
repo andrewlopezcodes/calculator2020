@@ -63,12 +63,27 @@ input{
 
 .keys:hover {
   border-color: red;
+  background-color: rgb(124, 205, 230);
 }
 
 .point:hover {
   border-color: red;
+  background-color: rgb(124, 205, 230);
 }
 
 .equals:hover {
   border-color: red;
+  background-color: rgb(124, 205, 230);
+}
+
+.keys:active {
+  background-color: aqua;
+}
+
+.point:active {
+  background-color: aqua;
+}
+
+.equals:active { 
+  background-color: aqua;
 }
