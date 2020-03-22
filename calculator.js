@@ -86,3 +86,5 @@ function oneOver(){
   pointed.disabled = false;
 };
 
+
+// This code was written by github: @andrewlopezcodes
