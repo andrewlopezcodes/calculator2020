@@ -13,10 +13,11 @@
       <input type="text" id="display">
     </div>
     <div id="divTwo">
-      <input type='button' value='% ' id='keys' onclick='toScreen("%")'>
-      <input type='button' value='CE' id='keys' onclick='toScreen("CE")'>
-      <input type='button' value='C' id='keys' onclick='toScreen("C")'>
-      <input type='button' value='back' id='keys' onclick='backspace("back")'>
+      
+      <input type='button' value='Clear' id='keys' onclick='toScreen("C")'>
+      <input type='button' value='Back' id='keys' onclick='backspace("back")'>
+      <input type='button' value='+ / -' id='keys' onclick='negation("!")'>
+      
       
       
     </div>
@@ -24,30 +25,31 @@
       <input type='button' value='1/x' id='keys' onclick='toScreen("C")'>
       <input type='button' value='x^2' id='keys' onclick='power("C")'>
       <input type='button' value='x√2' id='keys' onclick='backspace("CE")'>
-      <input type='button' value='/ '   id='keys' onclick='toScreen("/")'> 
+      <input type='button' value='/'   id='keys' onclick='toScreen("/")'> 
     </div>
     <div id="divFour">
       <input type='button' value='7' id='keys' onclick='toScreen("7")'>
       <input type='button' value='9' id='keys' onclick='toScreen("9")'>
       <input type='button' value='8' id='keys' onclick='toScreen("8")'>
-      <input type='button' value='* ' id='keys' onclick='toScreen("*")'>
+      <input type='button' value='*' id='keys' onclick='toScreen("*")'>
     </div>
     <div id="divFive">
       <input type='button' value='4' id='keys' onclick='toScreen("4")'>
       <input type='button' value='5' id='keys' onclick='toScreen("5")'>
       <input type='button' value='6' id='keys' onclick='toScreen("6")'>
-      <input type='button' value='- ' id='keys' onclick='toScreen("-")'>
+      <input type='button' value='-' id='keys' onclick='toScreen("-")'>
     </div>
     <div id="divSix">
       <input type='button' value='1' id='keys' onclick='toScreen("1")'>
       <input type='button' value='2' id='keys' onclick='toScreen("2")'>
       <input type='button' value='3' id='keys' onclick='toScreen("3")'>
-      <input type='button' value='+ ' id='equals' onclick='toScreen("+")'>
+      <input type='button' value='+' id='equals' onclick='toScreen("+")'>
     </div>
     <div id="divSeven">
-      <input type='button' value='!' id='keys' onclick='negation("!")'>
+      
       <input type='button' value='0' id='keys' onclick='toScreen("0")'>
-      <input type='button' value='.' id='keys' onclick='toScreen(".")'>
+      <input type='button' value='.' id='point' onclick='point()'>
+      <input type='button' value='%' id='keys' onclick='toScreen("%")'>
       <input type='button' value='=' id='equals' onclick='equal()'>
     </div>
 
