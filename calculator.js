@@ -34,6 +34,7 @@ function power(){
   x = box.value;
   x = eval(x*x);
   box.value = x;
+  equal();
   pointed.disabled = false;
 }
 
@@ -54,10 +55,12 @@ function negation(){
     x = x * -1;
     box.value = x.toString();
   }
+  equal();
 };
 
 function squareRoot(){
   let num = box.value;
   let x = Math.sqrt(eval(num));
   box.value = x; 
+  equal();
 }
