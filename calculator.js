@@ -26,7 +26,7 @@ function point(){
 function equal(){
   x = box.value;
   x = eval(x);
-  box.value=x;
+  box.value = x;
   pointed.disabled = false;
 }
 
@@ -56,3 +56,8 @@ function negation(){
   }
 };
 
+function squareRoot(){
+  let num = box.value;
+  let x = Math.sqrt(eval(num));
+  box.value = x; 
+}
