@@ -86,7 +86,3 @@ function oneOver(){
   pointed.disabled = false;
 };
 
-button.addEventListener("mouseover", function( event ) {   
-  // highlight the mouseenter target
-  event.target.style.borderColor = "blue";
-});
