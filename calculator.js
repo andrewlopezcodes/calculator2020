@@ -1,7 +1,8 @@
 
 
 var box = document.getElementById('display');
-var pointed = document.getElementById('point');
+var pointed = document.getElementsByClassName('point');
+var button = document.getElementsById('keys');
 
 
 
@@ -84,3 +85,8 @@ function oneOver(){
   equal();
   pointed.disabled = false;
 };
+
+button.addEventListener("mouseover", function( event ) {   
+  // highlight the mouseenter target
+  event.target.style.borderColor = "blue";
+});
