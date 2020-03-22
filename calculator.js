@@ -1,24 +1,40 @@
 
 
 var box = document.getElementById('display');
+var pointed = document.getElementById('point');
+
+
+
 
 function toScreen (x){
     box.value+= x;
     if(x === 'C'){
       box.value='';
     }
+    pointed.disabled = false;
+}
+
+function point(){
+  let num = box.value;
+  let point = "."
+  if(num.includes(point) === false){
+    toScreen(point);
+    pointed.disabled = true;
+  }
 }
 
 function equal(){
   x = box.value;
   x = eval(x);
   box.value=x;
+  pointed.disabled = false;
 }
 
 function power(){
   x = box.value;
   x = eval(x*x);
   box.value = x;
+  pointed.disabled = false;
 }
 
 function backspace(){
@@ -40,12 +56,3 @@ function negation(){
   }
 };
 
-function point(){
-  let pointed = document.getElementById('point');
-  let num = box.value;
-  let point = "."
-  if(num.includes(point) === false){
-    toScreen(point);
-    pointed.disabled = true;
-  }
-}
