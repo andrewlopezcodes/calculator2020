@@ -7,12 +7,12 @@ var pointed = document.getElementById('point');
 
 
 function toScreen (x){
-    box.value+= x;
-    if(x === 'C'){
-      box.value='';
-    }
-    pointed.disabled = false;
-}
+  box.value+= x;
+  if(x === 'C'){
+    box.value='';
+  }
+  pointed.disabled = false;
+};
 
 function point(){
   let num = box.value;
@@ -21,14 +21,14 @@ function point(){
     toScreen(point);
     pointed.disabled = true;
   }
-}
+};
 
 function equal(){
   x = box.value;
   x = eval(x);
   box.value = x;
   pointed.disabled = false;
-}
+};
 
 
 
@@ -37,7 +37,8 @@ function backspace(){
   let len = num.length -1;
   let newNum = num.substring(0,len);
   box.value = newNum;
-}
+};
+
 //Modual Opperatoros 
 // ----------------------------------------
 function negation(){
@@ -58,7 +59,7 @@ function squareRoot(){
   let x = Math.sqrt(eval(num));
   box.value = x; 
   equal();
-}
+};
 
 function power(){
   x = box.value;
@@ -66,7 +67,7 @@ function power(){
   box.value = x;
   equal();
   pointed.disabled = false;
-}
+};
 
 function percent(){
   x = box.value;
@@ -74,4 +75,12 @@ function percent(){
   box.value = x;
   equal();
   pointed.disabled = false;
-}
+};
+
+function oneOver(){
+  x = box.value;
+  x = eval(1/x);
+  box.value = x;
+  equal();
+  pointed.disabled = false;
+};
